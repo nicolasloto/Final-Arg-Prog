@@ -2,7 +2,12 @@ div{
     background-color: #77c3ec;
     }
 
+app-logo{
+    margin-left: 5px;
+}
+
 app-contact{
     float: right;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
