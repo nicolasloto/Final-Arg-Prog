@@ -1,0 +1,117 @@
+.row{
+    padding: 25px;
+}
+
+div{
+    background-color: #B8E2F2;
+    text-align: left;
+}
+
+/*estilo pfp*/
+
+/*smartphone*/
+@media (max-width:767px){
+    #pfp{
+        position: absolute;
+        width: 30%;
+        height: auto;
+        border-radius: 25%;
+        box-shadow: 5px 5px 5px rgb(40, 40, 40);
+        left: 35%;
+        top: 250px
+    }
+}
+
+/*smartphone horizontal*/
+@media (min-width:576px){
+    #pfp{
+        position: absolute;
+        width: 20%;
+        height: auto;
+        border-radius: 25%;
+        box-shadow: 5px 5px 5px rgb(40, 40, 40);
+        left: 7%;
+        top: 360px;
+    }
+}
+
+/*tablets*/
+@media (min-width: 768px){
+    #pfp{
+        position: absolute;
+        width: 20%;
+        height: auto;
+        border-radius: 25%;
+        box-shadow: 5px 5px 5px rgb(40, 40, 40);
+        left: 7%;
+        top: 440px;
+    }
+}
+
+/*laptop*/
+@media (min-width: 1024px){
+    #pfp{
+        position: absolute;
+        width: 20%;
+        height: auto;
+        border-radius: 25%;
+        box-shadow: 5px 5px 5px rgb(40, 40, 40);
+        left: 7%;
+        top: 520px;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1200px){
+    #pfp{
+        position: absolute;
+        width: 20%;
+        height: auto;
+        border-radius: 25%;
+        box-shadow: 5px 5px 5px rgb(40, 40, 40);
+        left: 7%;
+        top: 575px;
+    }
+}
+
+/*desktop grande*/
+@media (min-width: 1440px){
+    #pfp{
+        position: absolute;
+        width: 20%;
+        height: auto;
+        border-radius: 25%;
+        box-shadow: 5px 5px 5px rgb(40, 40, 40);
+        left: 7%;
+        top: 675px;
+    }
+}
+
+/*desktop HD+*/
+@media (min-width: 1600px){
+    #pfp{
+        position: absolute;
+        width: 20%;
+        height: auto;
+        border-radius: 25%;
+        box-shadow: 5px 5px 5px rgb(40, 40, 40);
+        left: 7%;
+        top: 830px;
+    }
+}
+
+
+/*estilo nombre*/
+#nombre{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0;
+}
+
+#nombre2{
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 0;
+}
