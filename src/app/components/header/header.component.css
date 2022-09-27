@@ -2,6 +2,12 @@ div{
     background-color: #B8E2F2;
     }
 
+    .row{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    }
+
 app-logo{
     margin-left: 5px;
 }

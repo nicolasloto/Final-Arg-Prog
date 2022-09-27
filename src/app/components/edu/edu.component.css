@@ -1,0 +1,14 @@
+div{
+    background: #B8E2F2;
+}
+
+.row{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    margin: 0%;
+}
+
+h3, h5{
+    display: inline;
+}
