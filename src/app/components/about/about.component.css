@@ -1,11 +1,15 @@
 .row{
-    padding: 20px;
     margin: 0%;
+    padding: 30px;
 }
 
 div{
     background-color: #B8E2F2;
     text-align: left;
+}
+
+#bio{
+    text-align: justify;
 }
 
 /*estilo pfp*/
@@ -19,22 +23,10 @@ div{
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
         left: 35%;
-        top: 400px
+        top: 350px
     }
 }
 
-/*smartphone horizontal*/
-@media (min-width:576px){
-    #pfp{
-        position: absolute;
-        width: 20%;
-        height: auto;
-        border-radius: 25%;
-        box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 7.5%;
-        top: 510px;
-    }
-}
 
 /*tablets*/
 @media (min-width: 768px){
@@ -44,8 +36,11 @@ div{
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 7.5%;
-        top: 420px;
+        left: 8.75%;
+        top: 300px;
+    }
+    #bio{
+        margin-top: 30px;
     }
 }
 
@@ -57,8 +52,8 @@ div{
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 7.5%;
-        top: 510px;
+        left: 8.75%;
+        top: 340px;
     }
 }
 
@@ -70,8 +65,8 @@ div{
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 7.5%;
-        top: 575px;
+        left: 8.75%;
+        top: 360px;
     }
 }
 
@@ -83,8 +78,8 @@ div{
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 7.5%;
-        top: 655px;
+        left: 8.75%;
+        top: 400px;
     }
 }
 
@@ -97,7 +92,7 @@ div{
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
         left: 7.5%;
-        top: 820px;
+        top: 480px;
     }
 }
 
@@ -106,7 +101,7 @@ div{
 #nombre{
     font-weight: bold;
     font-size: large;
-    margin-top: 3em;
+    margin-top: 2.5em;
     margin-left: 0;
 }
 

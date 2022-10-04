@@ -1,5 +1,11 @@
+.row{
+    background-color: #B8E2F2;
+    margin: 0rem;
+}
+
 img{
     max-width: 100%;
     height: auto;
     padding: 10px;
+    border-radius: 25px;
 }

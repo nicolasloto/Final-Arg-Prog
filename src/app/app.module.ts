@@ -10,6 +10,8 @@ import { WorkComponent } from './components/work/work.component';
 import { EduComponent } from './components/edu/edu.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SkillsComponent } from './components/skills/skills.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SkillsComponent } from './components/skills/skills.component';
     AboutComponent,
     WorkComponent,
     EduComponent,
-    SkillsComponent
+    SkillsComponent,
+    FooterComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

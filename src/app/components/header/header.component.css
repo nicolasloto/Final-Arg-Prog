@@ -8,10 +8,6 @@ div{
     overflow-x: hidden;
     }
 
-app-logo{
-    margin-left: 5px;
-}
-
 app-contact{
     float: right;
     margin-top: 10px;
