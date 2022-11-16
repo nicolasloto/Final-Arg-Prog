@@ -7,6 +7,10 @@ div{
     padding: 30px;
 }
 
+h1{
+    margin-bottom: 20px;
+}
+
 h3, h5{
     display: inline;
 }
