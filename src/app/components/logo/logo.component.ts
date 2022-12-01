@@ -9,23 +9,23 @@ import { TokenService } from 'src/app/services/token.service';
 })
 export class LogoComponent implements OnInit {
   isLoggedIn = false;
-  
-  constructor(private router:Router, private tokenService: TokenService) { }
+
+  constructor(private router: Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
-    if(this.tokenService.getToken()){
-this.isLoggedIn = true;
-    }else{
+    if (this.tokenService.getToken()) {
+      this.isLoggedIn = true;
+    } else {
       this.isLoggedIn = false;
     }
   }
 
-  onLogOut(): void{
-this.tokenService.logOut();
-window.location.reload();
+  onLogOut(): void {
+    this.tokenService.logOut();
+    window.location.reload();
   }
 
-  login(){
+  login() {
     this.router.navigate(['/login'])
   }
 }

@@ -1,22 +1,22 @@
-.row{
+.row {
     margin: 0%;
     padding: 30px;
 }
 
-div{
+div {
     background-color: #B8E2F2;
     text-align: left;
 }
 
-#bio{
+#bio {
     text-align: justify;
 }
 
 /*estilo pfp*/
 
 /*smartphone*/
-@media (max-width:767px){
-    #pfp{
+@media (max-width:767px) {
+    #pfp {
         position: absolute;
         width: 30%;
         height: auto;
@@ -29,8 +29,8 @@ div{
 
 
 /*tablets*/
-@media (min-width: 768px){
-    #pfp{
+@media (min-width: 768px) {
+    #pfp {
         position: absolute;
         width: 20%;
         height: auto;
@@ -39,14 +39,15 @@ div{
         left: 8.75%;
         top: 300px;
     }
-    #bio{
+
+    #bio {
         margin-top: 30px;
     }
 }
 
 /*laptop*/
-@media (min-width: 1024px){
-    #pfp{
+@media (min-width: 1024px) {
+    #pfp {
         position: absolute;
         width: 20%;
         height: auto;
@@ -58,8 +59,8 @@ div{
 }
 
 /*desktop*/
-@media (min-width: 1200px){
-    #pfp{
+@media (min-width: 1200px) {
+    #pfp {
         position: absolute;
         width: 20%;
         height: auto;
@@ -71,8 +72,8 @@ div{
 }
 
 /*desktop grande*/
-@media (min-width: 1440px){
-    #pfp{
+@media (min-width: 1440px) {
+    #pfp {
         position: absolute;
         width: 20%;
         height: auto;
@@ -84,8 +85,8 @@ div{
 }
 
 /*desktop HD+*/
-@media (min-width: 1600px){
-    #pfp{
+@media (min-width: 1600px) {
+    #pfp {
         position: absolute;
         width: 20%;
         height: auto;
@@ -98,14 +99,14 @@ div{
 
 
 /*estilo nombre*/
-#nombre{
+#nombre {
     font-weight: bold;
     font-size: large;
     margin-top: 2.5em;
     margin-left: 0;
 }
 
-#titulo{
+#titulo {
     font-weight: lighter;
     font-size: medium;
     margin-top: -1em;

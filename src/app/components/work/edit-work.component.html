@@ -1,0 +1,19 @@
+<div class="container" *ngIf="experiencia">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreXP">Nombre de la organización</label>
+                    <input type="text" class="form-control" id="nombreXP" name="nombreXP"
+                        [(ngModel)]="experiencia.nombreXP" required>
+                </div>
+                <div class="form-group">
+                    <label for="descXP">Puesto</label>
+                    <input type="text" class="form-control" id="descXP" name="descXP" [(ngModel)]="experiencia.descXP"
+                        required>
+                </div>
+                <button class="btn btn-outline-success">Agregar experiencia</button>
+            </form>
+        </div>
+    </div>
+</div>

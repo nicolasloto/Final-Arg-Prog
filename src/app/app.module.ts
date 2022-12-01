@@ -17,6 +17,11 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './services/interceptor-service';
+import { NewEduComponent } from './components/edu/new-edu.component';
+import { EditEduComponent } from './components/edu/edit-edu.component';
+import { NewWorkComponent } from './components/work/new-work.component';
+import { EditWorkComponent } from './components/work/edit-work.component';
+
 
 @NgModule({
   declarations: [
@@ -31,8 +36,13 @@ import { interceptorProvider } from './services/interceptor-service';
     FooterComponent,
     ProjectsComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NewWorkComponent,
+    EditWorkComponent,
+    NewEduComponent,
+    EditEduComponent,
   ],
+
   imports: [
     BrowserModule,
     NgCircleProgressModule.forRoot({}),
