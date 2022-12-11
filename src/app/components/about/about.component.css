@@ -1,15 +1,40 @@
 .row {
     margin: 0%;
-    padding: 30px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+#bio {
+    font-family: 'Raleway', helvetica, sans-serif;
+        margin-top: 1rem;
+    }
+
+/*estilo nombre*/
+#nombre {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+#titulo {
+    font-family: 'Raleway', helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: -1em;
+    margin-left: 0;
+    margin-bottom: 2em;
 }
 
 div {
     background-color: #B8E2F2;
     text-align: left;
-}
-
-#bio {
-    text-align: justify;
 }
 
 /*estilo pfp*/
@@ -25,91 +50,89 @@ div {
         left: 35%;
         top: 350px
     }
+
+    #nombre {
+        margin-top: 2em;
+    }
 }
 
 
 /*tablets*/
 @media (min-width: 768px) {
     #pfp {
-        position: absolute;
-        width: 20%;
+        position: relative;
+        width: 75%;
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 8.75%;
-        top: 300px;
+        top: -150px;
     }
 
-    #bio {
-        margin-top: 30px;
+    #nombre {
+        margin-top: -6.5em;   
     }
 }
 
 /*laptop*/
 @media (min-width: 1024px) {
     #pfp {
-        position: absolute;
-        width: 20%;
+        position: relative;
+        width: 75%;
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 8.75%;
-        top: 340px;
+        top: -150px;
+    }
+
+    #nombre {
+        margin-top: -6em;   
     }
 }
 
 /*desktop*/
 @media (min-width: 1200px) {
     #pfp {
-        position: absolute;
-        width: 20%;
+        position: relative;
+        width: 75%;
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 8.75%;
-        top: 360px;
+        top: -160px;
+    }
+
+    #nombre {
+        margin-top: -7em;   
     }
 }
 
 /*desktop grande*/
 @media (min-width: 1440px) {
     #pfp {
-        position: absolute;
-        width: 20%;
+        position: relative;
+        width: 75%;
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 8.75%;
-        top: 400px;
+        top: -200px;
+    }
+    
+    #nombre {
+        margin-top: -9em;   
     }
 }
 
 /*desktop HD+*/
 @media (min-width: 1600px) {
     #pfp {
-        position: absolute;
-        width: 20%;
+        position: relative;
+        width: 50%;
         height: auto;
         border-radius: 25%;
         box-shadow: 5px 5px 5px rgb(40, 40, 40);
-        left: 7.5%;
-        top: 480px;
+        top: -250px;
     }
-}
 
-
-/*estilo nombre*/
-#nombre {
-    font-weight: bold;
-    font-size: large;
-    margin-top: 2.5em;
-    margin-left: 0;
-}
-
-#titulo {
-    font-weight: lighter;
-    font-size: medium;
-    margin-top: -1em;
-    margin-left: 0;
-    margin-bottom: 2em;
+    #nombre {
+        margin-top: -11em;   
+    }
 }

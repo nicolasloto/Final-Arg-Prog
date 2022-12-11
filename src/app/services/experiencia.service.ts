@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  URL = 'http://localhost:8080/experiencia/'
+  URL = 'https://proud-violet-2536.fly.dev/experiencia/'
 
   constructor(private httpClient: HttpClient) { }
 

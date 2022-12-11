@@ -1,50 +1,103 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans|Raleway">
 <div class="row">
+
     <h1>Hard & Soft Skills</h1>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress [startFromZero]="true" [percent]="80" [radius]="100" [showUnits]="false" [showImage]="true"
-            [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/HTML5.png'" [outerStrokeWidth]="20"
-            [innerStrokeWidth]="10" [outerStrokeColor]="'#F57328'" [outerStrokeGradient]="true"
-            [outerStrokeGradientStopColor]="'#E14D2A'" [innerStrokeColor]="'#4C6793'" [animation]="true"
-            [animationDuration]="1500"></circle-progress>
+    <div title="HTML 5" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [startFromZero]="true" [percent]="80" [radius]="100" [showUnits]="false" [showImage]="true"
+        [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/hard/HTML5.png'"
+        [outerStrokeWidth]="20" [outerStrokeColor]="'#F57328'"
+        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#D64D2D'" 
+        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+        [animation]="true" [animationDuration]="1500">
+        </circle-progress>
     </div>
 
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress [startFromZero]="true" [percent]="85" [radius]="100" [showUnits]="false" [showImage]="true"
-            [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/CSS3.png'" [outerStrokeWidth]="20"
-            [innerStrokeWidth]="10" [outerStrokeColor]="'#F57328'" [outerStrokeGradient]="true"
-            [outerStrokeGradientStopColor]="'#E14D2A'" [innerStrokeColor]="'#4C6793'" [animation]="true"
-            [animationDuration]="1500"></circle-progress>
+    <div title="CSS 3" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [startFromZero]="true" [percent]="85" [radius]="100" [showUnits]="false" [showImage]="true"
+        [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/hard/CSS3.png'"
+        [outerStrokeWidth]="20" [outerStrokeColor]="'#F57328'"
+        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#D64D2D'"
+        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+        [animation]="true" [animationDuration]="1500">
+        </circle-progress>
     </div>
 
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress [startFromZero]="true" [percent]="100" [radius]="100" [showUnits]="false" [showImage]="true"
-            [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/GitHub-Logo.png'" [outerStrokeWidth]="20"
-            [innerStrokeWidth]="10" [outerStrokeColor]="'#F57328'" [outerStrokeGradient]="true"
-            [outerStrokeGradientStopColor]="'#E14D2A'" [innerStrokeColor]="'#4C6793'" [animation]="true"
-            [animationDuration]="1500"></circle-progress>
+    <div title="GitHub" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [startFromZero]="true" [percent]="100" [radius]="100" [showUnits]="false" [showImage]="true"
+        [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/hard/GitHub-Logo.png'"
+        [outerStrokeWidth]="20" [outerStrokeColor]="'#F57328'"
+        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#D64D2D'"
+        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+        [animation]="true" [animationDuration]="1500">  
+        </circle-progress>
     </div>
 
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress [startFromZero]="true" [percent]="75" [radius]="100" [showUnits]="false" [showImage]="true"
-            [imageHeight]="50" [imageWidth]="50" [imageSrc]="'../assets/skills/cooperation.png'"
-            [backgroundColor]="'#424242'" [backgroundPadding]="-75" [outerStrokeWidth]="15" [innerStrokeWidth]="5"
-            [outerStrokeColor]="'#59CE8F'" [outerStrokeGradientStopColor]="'#3E8E7E'" [innerStrokeColor]="'#4C0033'"
-            [animation]="true" [animationDuration]="1500"></circle-progress>
+    <div title="Cooperación" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+        [startFromZero]="true" [percent]="75" [radius]="100" [showUnits]="false" [showImage]="true"
+        [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/soft/handshake.png'"
+        [outerStrokeWidth]="20" [outerStrokeColor]="'#FFEBAD'"
+        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#DBCFA9'"
+        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+        [animation]="true" [animationDuration]="1500">
+        </circle-progress>
     </div>
 
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress [startFromZero]="true" [percent]="100" [radius]="100" [showUnits]="false" [showImage]="true"
-            [imageHeight]="50" [imageWidth]="50" [imageSrc]="'../assets/skills/manner.png'"
-            [backgroundColor]="'#424242'" [backgroundPadding]="-75" [outerStrokeWidth]="15" [innerStrokeWidth]="5"
-            [outerStrokeColor]="'#59CE8F'" [outerStrokeGradientStopColor]="'#3E8E7E'" [innerStrokeColor]="'#4C0033'"
-            [animation]="true" [animationDuration]="1500"></circle-progress>
+    <div title="Optimismo" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+            [startFromZero]="true" [percent]="100" [radius]="100" [showUnits]="false" [showImage]="true"
+            [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/soft/optimistic.png'"
+            [outerStrokeWidth]="20" [outerStrokeColor]="'#FFEBAD'"
+            [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#DBCFA9'"
+            [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+            [animation]="true" [animationDuration]="1500">
+        </circle-progress>
     </div>
 
-    <div class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress [startFromZero]="true" [percent]="80" [radius]="100" [showUnits]="false" [showImage]="true"
-            [imageHeight]="50" [imageWidth]="50" [imageSrc]="'../assets/skills/optimistic.png'"
-            [backgroundColor]="'#424242'" [backgroundPadding]="-75" [outerStrokeWidth]="15" [innerStrokeWidth]="5"
-            [outerStrokeColor]="'#59CE8F'" [outerStrokeGradientStopColor]="'#3E8E7E'" [innerStrokeColor]="'#4C0033'"
-            [animation]="true" [animationDuration]="1500"></circle-progress>
+    <div title="Empatía" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+            [startFromZero]="true" [percent]="90" [radius]="100" [showUnits]="false" [showImage]="true"
+            [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/soft/empathy.png'"
+            [outerStrokeWidth]="20" [outerStrokeColor]="'#FFEBAD'"
+            [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#DBCFA9'"
+            [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+            [animation]="true" [animationDuration]="1500">
+        </circle-progress>
+    </div>
+
+    <div title="Español (Argentina)" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+            [startFromZero]="true" [percent]="100" [radius]="100" [showUnits]="false" [showImage]="true"
+            [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/lang/ESP.png'"
+            [outerStrokeWidth]="20" [outerStrokeColor]="'#55F2A9'"
+            [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#59CE8F'"
+            [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+            [animation]="true" [animationDuration]="1500">
+        </circle-progress>
+    </div>
+
+    <div title="Inglés" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+            [startFromZero]="true" [percent]="90" [radius]="100" [showUnits]="false" [showImage]="true"
+            [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/lang/ENG.png'"
+            [outerStrokeWidth]="20" [outerStrokeColor]="'#55F2A9'"
+            [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#59CE8F'"
+            [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+            [animation]="true" [animationDuration]="1500">
+        </circle-progress>
+    </div>
+
+    <div title="Portugués" class="text-center col-sm-4 col-md-4 col-lg-4">
+        <circle-progress
+            [startFromZero]="true" [percent]="25" [radius]="100" [showUnits]="false" [showImage]="true"
+            [imageHeight]="75" [imageWidth]="75" [imageSrc]="'../assets/skills/lang/BR.png'" 
+            [outerStrokeWidth]="20" [outerStrokeColor]="'#55F2A9'"
+            [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#59CE8F'"
+            [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
+            [animation]="true" [animationDuration]="1500">
+           </circle-progress>
     </div>
 </div>

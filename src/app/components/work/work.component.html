@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans|Raleway">
 <div class="row">
     <h1>Experiencia laboral</h1>
     <div class="col-lg-2">
@@ -12,9 +13,11 @@
             <tbody>
                 <tr *ngFor="let Experiencia of experiencia">
                     <td>
-                        <h5>{{Experiencia.nombreXP}}</h5>
+                        <h2>{{Experiencia.nombreXP}}</h2>
                     </td>
-                    <td>{{Experiencia.descXP}}</td>
+                    <td>
+                        <h3>{{Experiencia.descXP}}</h3>
+                    </td>
                     <td *ngIf="isLoggedIn">
                         <button class="btn btn-outline-primary" routerLink="/edit-work/{{Experiencia.id}}">
                             <i class="bi bi-pencil-square"></i> Editar</button>

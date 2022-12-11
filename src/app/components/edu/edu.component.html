@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans|Raleway">
 <div class="row">
     <h1>Educación</h1>
     <div class="col-lg-2">
@@ -12,9 +13,11 @@
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
                     <td>
-                        <h5>{{Educacion.nombreEd}}</h5>
+                        <h2>{{Educacion.nombreEd}}</h2>
                     </td>
-                    <td>{{Educacion.descEd}}</td>
+                    <td>
+                        <h3>{{Educacion.descEd}}</h3>
+                    </td>
                     <td *ngIf="isLoggedIn">
                         <button class="btn btn-outline-primary" routerLink="/edit-edu/{{Educacion.id}}">
                             <i class="bi bi-pencil-square"></i> Editar</button>

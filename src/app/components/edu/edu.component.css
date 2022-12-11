@@ -4,13 +4,28 @@ div{
 
 .row{
     margin: 0%;
-    padding: 30px;
+    padding: 20px;
 }
 
 h1{
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
-h3, h5{
+h2{
     display: inline;
+    font-family: 'Raleway', helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+h3{
+    display: inline;
+    font-family: 'Raleway', helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 20px;
 }
