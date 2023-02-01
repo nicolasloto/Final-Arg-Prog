@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://proud-violet-2536.fly.dev/auth/';
+  authURL = 'https://portfolio-nicolasloto.koyeb.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

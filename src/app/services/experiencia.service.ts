@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  URL = 'https://proud-violet-2536.fly.dev/experiencia/'
+  URL = 'https://portfolio-nicolasloto.koyeb.app/experiencia/'
 
   constructor(private httpClient: HttpClient) { }
 

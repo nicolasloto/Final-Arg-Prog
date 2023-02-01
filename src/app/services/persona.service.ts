@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = 'https://proud-violet-2536.fly.dev/personas/'
+  URL = 'https://portfolio-nicolasloto.koyeb.app/personas/'
 
   constructor(private http: HttpClient) { }
 
