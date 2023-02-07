@@ -6,9 +6,8 @@
             Añadir experiencia
         </button>
     </div>
-
     <div class="col-lg-1"></div>
-    <div class="col-lg-11">
+    <div class="table-responsive">
         <table class="table">
             <thead>
                 <tr>
@@ -28,11 +27,11 @@
                     </td>
                     <td *ngIf="isLoggedIn">
                         <button class="btn btn-outline-primary" routerLink="/edit-work/{{Experiencia.id}}">
-                            <i class="bi bi-pencil-square"></i>Editar</button>
+                            <i class="bi bi-pencil-square">Editar</i></button>
                     </td>
                     <td *ngIf="isLoggedIn">
                         <button class="btn btn-outline-danger" (click)="delete(Experiencia.id)">
-                            <i class="bi bi-trash"></i>Borrar</button>
+                            <i class="bi bi-trash">Borrar</i></button>
                     </td>
                 </tr>
             </tbody>

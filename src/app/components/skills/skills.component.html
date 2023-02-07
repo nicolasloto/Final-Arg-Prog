@@ -8,9 +8,11 @@
         </button>
     </div>
     
+    <div class="row">
     <div title="HTML" class="text-center col-sm-4 col-md-4 col-lg-4 circle" *ngFor="let skill of skill">
         <circle-progress
-        [startFromZero]="true" [percent]="(skill.percent)"
+        [startFromZero]="true"
+        [percent]="(skill.percent)"
         [radius]="100"
         [showUnits]="true"
         [showSubtitle]="true"
@@ -36,5 +38,6 @@
             <button class="btn btn-outline-danger" (click)="delete(skill.id)">
                 <i class="bi bi-trash"></i></button>
         </td>
+    </div>
     </div>
     </div>
