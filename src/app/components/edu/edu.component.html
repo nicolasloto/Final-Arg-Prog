@@ -12,24 +12,27 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>Institución</th><th>Título</th>
+                    <th>Institución</th><th>Título</th><th>Periodo</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
                     <td>
-                        <h2>{{Educacion.nombreEd}}</h2>
+                        <h3>{{Educacion.nombreEd}}</h3>
                     </td>
                     <td>
                         <h3>{{Educacion.descEd}}</h3>
                     </td>
+                    <td>
+                        <h3>{{Educacion.inicioEd}} - {{Educacion.finalEd}}</h3>
+                    </td>
                     <td *ngIf="isLoggedIn">
-                        <button class="btn btn-outline-primary" routerLink="/edit-edu/{{Educacion.id}}">
-                            <i class="bi bi-pencil-square"></i> Editar</button>
+                        <button class="btn btn-outline-primary" routerLink="/edit-work/{{Educacion.id}}">
+                            <i class="bi bi-pencil-square"></i>Editar</button>
                     </td>
                     <td *ngIf="isLoggedIn">
                         <button class="btn btn-outline-danger" (click)="delete(Educacion.id)">
-                            <i class="bi bi-trash"></i> Borrar</button>
+                            <i class="bi bi-trash"></i>Borrar</button>
                     </td>
                 </tr>
             </tbody>

@@ -4,15 +4,21 @@
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreEd">Nombre de la institución</label>
-                    <input type="text" class="form-control" id="nombreEd" name="nombreEd"
-                        [(ngModel)]="educacion.nombreEd" required>
+                    <input type="text" class="form-control" id="nombreEd" name="nombreEd" [(ngModel)]="educacion.nombreEd" required>
                 </div>
                 <div class="form-group">
                     <label for="descEd">Título</label>
-                    <input type="text" class="form-control" id="descEd" name="descEd" [(ngModel)]="educacion.descEd"
-                        required>
+                    <input type="text" class="form-control" id="descEd" name="descEd" [(ngModel)]="educacion.descEd" required>
                 </div>
-                <button class="btn btn-outline-success">Agregar educación</button>
+                <div class="form-group">
+                    <label for="inicioEd">Inicio</label>
+                    <input type="text" class="form-control" id="inicioEd" name="inicioEd" [(ngModel)]="educacion.inicioEd" required>
+                </div>
+                <div class="form-group">
+                    <label for="finalEd">Final</label>
+                    <input type="text" class="form-control" id="finalEd" name="finalEd" [(ngModel)]="educacion.finalEd" required>
+                </div>
+                <button class="btn btn-outline-success">Editar educación</button>
             </form>
         </div>
     </div>

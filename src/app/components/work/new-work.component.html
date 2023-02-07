@@ -4,12 +4,19 @@
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreXP">Nombre de la organización</label>
-                    <input type="text" class="form-control" id="nombreXP" name="nombreXP" [(ngModel)]="nombreXP"
-                        required>
+                    <input type="text" class="form-control" id="nombreXP" name="nombreXP" [(ngModel)]="nombreXP" required>
                 </div>
                 <div class="form-group">
                     <label for="descXP">Puesto</label>
                     <input type="text" class="form-control" id="descXP" name="descXP" [(ngModel)]="descXP" required>
+                </div>
+                <div class="form-group">
+                    <label for="timeXP">Inicio</label>
+                    <input type="text" class="form-control" id="inicioXP" name="inicioXP" [(ngModel)]="inicioXP" required>
+                </div>
+                <div class="form-group">
+                    <label for="timeXP">Final</label>
+                    <input type="text" class="form-control" id="finalXP" name="finalXP" [(ngModel)]="finalXP" required>
                 </div>
                 <button class="btn btn-outline-success">Agregar experiencia</button>
             </form>

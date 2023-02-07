@@ -2,102 +2,39 @@
 <div class="row">
 
     <h1>Hard & Soft Skills</h1>
-    <div title="HTML" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="80" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'HTML'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#F57328'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#D64D2D'" 
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">
-        </circle-progress>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-success" routerLink="/new-skill" *ngIf="isLoggedIn">
+            Añadir habilidad
+        </button>
     </div>
+    
+    <div title="HTML" class="text-center col-sm-4 col-md-4 col-lg-4 circle" *ngFor="let skill of skill">
+        <circle-progress
+        [startFromZero]="true" [percent]="(skill.percent)"
+        [radius]="100"
+        [showUnits]="true"
+        [showSubtitle]="true"
+        [subtitle]="(skill.nombre)"
+        subtitleFontSize="15"
+        subtitleColor="#252525"
+        [outerStrokeWidth]="20"
+        [outerStrokeColor]="'#F57328'"
+        [outerStrokeGradient]="true"
+        [outerStrokeGradientStopColor]="'#D64D2D'" 
+        [innerStrokeWidth]="10"
+        [innerStrokeColor]="'#4C6793'"
+        [animation]="true"
+        [animationDuration]="1500">
+        </circle-progress>
 
-    <div title="CSS" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="90" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'CSS'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#F57328'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#D64D2D'"
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">
-        </circle-progress>
+        <div>
+        <td *ngIf="isLoggedIn">
+            <button class="btn btn-outline-primary" routerLink="/edit-skill/{{skill.id}}">
+                <i class="bi bi-pencil-square"></i></button>
+        </td>
+        <td *ngIf="isLoggedIn">
+            <button class="btn btn-outline-danger" (click)="delete(skill.id)">
+                <i class="bi bi-trash"></i></button>
+        </td>
     </div>
-
-    <div title="GitHub" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="100" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'GitHub'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#F57328'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#D64D2D'"
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">  
-        </circle-progress>
     </div>
-
-    <div title="Cooperación" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="75" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'Cooperación'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#FFEBAD'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#DBCFA9'"
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">
-        </circle-progress>
-    </div>
-
-    <div title="Optimismo" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="100" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'Optimismo'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#FFEBAD'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#DBCFA9'"
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">
-        </circle-progress>
-    </div>
-
-    <div title="Empatía" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="90" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'Empatía'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#FFEBAD'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#DBCFA9'"
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">
-        </circle-progress>
-    </div>
-
-    <div title="Español" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="100" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'Español'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#55F2A9'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#59CE8F'"
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">
-        </circle-progress>
-    </div>
-
-    <div title="Inglés" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="95" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'Inglés'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#55F2A9'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#59CE8F'"
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">
-        </circle-progress>
-    </div>
-
-    <div title="Portugués" class="text-center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-        [startFromZero]="true" [percent]="70" [radius]="100"
-        [showUnits]="true" [showSubtitle]="true" [subtitle]="'Portugués'" subtitleFontSize="15" subtitleColor="#252525"
-        [outerStrokeWidth]="20" [outerStrokeColor]="'#55F2A9'"
-        [outerStrokeGradient]="true" [outerStrokeGradientStopColor]="'#59CE8F'"
-        [innerStrokeWidth]="10" [innerStrokeColor]="'#4C6793'"
-        [animation]="true" [animationDuration]="1500">
-        </circle-progress>
-    </div>
-</div>

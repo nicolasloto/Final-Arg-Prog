@@ -11,6 +11,8 @@ import { Experiencia } from 'src/app/model/experiencia';
 export class NewWorkComponent implements OnInit {
   nombreXP: string;
   descXP: string;
+  inicioXP: string;
+  finalXP: string;
 
   constructor(private Experiencia: ExperienciaService, private router: Router) { }
 
@@ -18,16 +20,15 @@ export class NewWorkComponent implements OnInit {
   }
 
   onCreate(): void {
-    const educacion = new Experiencia(this.nombreXP, this.descXP);
+    const educacion = new Experiencia(this.nombreXP, this.descXP, this.inicioXP, this.finalXP);
     this.Experiencia.save(educacion).subscribe(
       data => {
-        alert("Experiencia añadida correctamente");
+        alert("Experiencia añadida exitosamente");
         this.router.navigate(['']);
       }, err => {
-        alert("falló");
+        alert("No se pudo añadir exitosamente");
         this.router.navigate(['']);
       }
     )
   }
-
 }
