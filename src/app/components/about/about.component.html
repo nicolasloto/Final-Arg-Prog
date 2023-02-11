@@ -1,17 +1,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans|Raleway">
 <div class="row">
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
         <img src="../../../assets/pfp.jpg" class="img-fluid" id="pfp">
-        <p id="nombre">Héctor Nicolás Loto</p>
-        <p id="titulo">Full Stack Developer Jr.</p>
+        <p id="nombre">{{Persona?.nombre}}</p>
+        <p id="titulo">{{Persona?.titulo}}</p>
     </div>
     <div class="col-xs12 col-sm-8 col-lg-8">
         <span>
             <h1>Acerca de mí</h1>
-            <p id="bio">Entusiasta de la informática, el diseño y los idiomas.
-                Autodidacta, constantemente incursionando en las nuevas tecnologías, habiendo así experimentado con
-                plataformas de retransmisión (Twitch, Youtube) y creación de contenido (diseños visuales, modelos 3D,
-                seguimiento facial, entre otros).</p>
+            <p id="bio">{{Persona?.descripcion}}</p>
+            <button type="button" class="btn btn-success" routerLink="/edit-about/1" *ngIf="isLoggedIn">
+                Editar descripción
+            </button>
         </span>
     </div>
+
 </div>
